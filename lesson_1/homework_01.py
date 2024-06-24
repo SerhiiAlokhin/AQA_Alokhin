@@ -74,4 +74,3 @@ book_1 = 8
 book_2 = book_1+2
 book_3 = (book_1+book_2)/2
 print(int(book_3+book_2+book_1),"грн.")
-
