@@ -76,7 +76,7 @@ adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split('. ')
 # Питання. Якщо поставити розділення по '.', зїявляється зайвий єлемент.
 # Якщо не ставити, то в останньому буде крапка
 print(adwentures_of_tom_sawer_sentences)
-print('==================================')
+print('===================================')
 # task 08
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
 Перетворіть рядок у нижній регістр.
