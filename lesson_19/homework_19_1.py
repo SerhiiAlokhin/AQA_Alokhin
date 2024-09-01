@@ -1,6 +1,5 @@
 import requests
-import json
-'oTAGsADKf7ZeHv3L06L34cfkBzhNYqwknhNWj8Zg' #api key
+
 url = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos'
 params = {'sol': 1000, 'camera': 'fhaz', 'api_key': 'oTAGsADKf7ZeHv3L06L34cfkBzhNYqwknhNWj8Zg'}
 response = requests.get(url, params)
