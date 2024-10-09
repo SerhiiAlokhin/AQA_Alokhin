@@ -1,3 +1,4 @@
+import allure
 import pytest
 from faker import Faker
 
@@ -5,6 +6,7 @@ fake = Faker()
 password = fake.password()
 
 
+@allure.feature('Registration')
 def test_registration(driver, open_main_page,start_registration,registration,check_that_registration_has_done):
     open_main_page()
     start_registration()
