@@ -8,7 +8,7 @@ from AQA_Alokhin.lesson_28.pages.Page_main import Main_page
 from AQA_Alokhin.lesson_28.pages.Page_registration import Registration_page
 
 import pytest
-
+import allure
 
 
 @pytest.fixture
@@ -17,14 +17,17 @@ def driver():
     yield driver
     driver.quit()
 
+
 @pytest.fixture
 def open_main_page(driver):
+    @allure.step("Відкриваємо сторінку")
     def _open_start_page():
         driver.get("https://guest:welcome2qauto@qauto2.forstudy.space")
     return _open_start_page
 
 @pytest.fixture
 def start_registration(driver):
+    @allure.step("Відкрити вікно реестрації")
     def _start_registration():
         main_page = Main_page(driver)
         sign_up_button = main_page.sing_up_button()
@@ -33,6 +36,7 @@ def start_registration(driver):
 
 @pytest.fixture
 def registration(driver):
+    @allure.step("Вносимо дані")
     def _registration(name, lastname, email, password):
         registration_page = Registration_page(driver)
 
@@ -53,6 +57,7 @@ def registration(driver):
 
 @pytest.fixture
 def check_that_registration_has_done(driver):
+    @allure.step("Перевірка реєстраціъ")
     def _check_that_registration_has_done():
         home_page = Home_page(driver)
         reg_result = WebDriverWait(driver, 10).until(
