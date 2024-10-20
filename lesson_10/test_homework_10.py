@@ -1,4 +1,4 @@
-from AQA_Alokhin.lesson_10.homework_10 import log_event
+from ..lesson_10.homework_10 import log_event
 import logging
 
 

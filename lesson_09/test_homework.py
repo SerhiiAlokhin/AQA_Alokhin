@@ -1,4 +1,4 @@
-from AQA_Alokhin.lesson_09.homework import sred_aref, perimetr, page_counter
+from .homework import sred_aref, perimetr, page_counter
 import unittest
 
 class Test_sred_aref(unittest.TestCase):

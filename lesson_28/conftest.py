@@ -3,9 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from AQA_Alokhin.lesson_28.pages.Page_home import Home_page
-from AQA_Alokhin.lesson_28.pages.Page_main import Main_page
-from AQA_Alokhin.lesson_28.pages.Page_registration import Registration_page
+from .pages.Page_home import Home_page
+from .pages.Page_main import Main_page
+from .pages.Page_registration import Registration_page
 
 import pytest
 import allure
